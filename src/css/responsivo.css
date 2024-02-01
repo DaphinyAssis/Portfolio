@@ -1,0 +1,143 @@
+@media (max-width: 1024px) {
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+
+    .cabecalho .menu li a {
+        padding: 15px;
+    }
+
+    .home{
+        justify-content: center;
+        align-items: center;
+    }
+    
+      .home .informacoes .titulo{
+        font-size: 40px;
+      }
+
+      .home .banner{
+        display: none;
+      }
+
+      .habilidade .titulo, .projeto .titulo, .sobre-mim .titulo, .contatos .titulo{
+        font-size: 40px;
+      }
+
+      .sobre-mim .titulo{
+        margin-bottom: 1px;
+      }
+
+      .sobre-mim .informacoes{
+        flex-direction: column;
+        padding: 0 30px;
+        
+    }
+
+      .sobre-mim .foto-de-perfil img{
+        width: 250px;
+      }
+    
+      .contatos .informacoes .conjunto i{
+        
+        font-size: 27px;
+      }
+      
+      .contatos .informacoes .conjunto h3{
+        font-size: 22px;
+      }
+      .contatos .conjunto p{
+        font-size: 14px;
+      }
+
+      .rodape .container {
+        flex-direction: column;
+    }
+
+    .rodape .media-icons a{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:768px){
+    .home .informacoes .btn-portfolio{
+        font-size: 15px;
+    }
+
+    .habilidade .cards-habilidades{
+        font-size: 14px;
+        padding: 0 30px;
+    }
+
+      .sobre-mim .informacoes p{
+        font-size: 15px;
+      }
+}
+
+@media (max-width: 435px){
+    .cabecalho .menu li a{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .home .informacoes{
+        margin-top: 10em;
+    }
+
+    .home .informacoes{
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .home .informacoes .titulo {
+    font-size: 40px;
+    
+    }
+
+    .home .informacoes .texto {
+        font-size: 17px;
+        
+    }
+
+    .habilidade .titulo, .projeto .titulo, .sobre-mim .titulo, .contatos .titulo{
+        font-size: 30px;
+      }
+
+      .habilidade .cards-habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+    font-size: 15px;
+    } 
+
+    .habilidade .cards-habilidades li{
+        padding:1px 10px;
+    
+    }
+
+
+    .sobre-mim{
+        padding: 0;
+    }
+    .sobre-mim .foto-de-perfil img{
+        width: 150px;
+      }
+
+      .sobre-mim .informacoes p{
+        font-size: 13px;
+      }
+    
+    .rodape .logo{
+        font-size: 24px;
+    }
+
+    .rodape .media-icons a{
+        font-size: 1.2em;
+    }
+
+}
+

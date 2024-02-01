@@ -1,0 +1,406 @@
+body {
+    background-color: #f0f8ff;
+    color: #000;
+}
+
+.cabecalho {
+    position: fixed;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Urbanist';
+    letter-spacing: 1px;
+    align-items: center;
+    padding: 0 80px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cabecalho .logo a {
+    font-weight: bolder;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+}
+
+.cabecalho .logo a:hover {
+    color: #b068bc;
+    transition: all .3s ease;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+
+}
+
+.cabecalho .menu li a {
+    padding: 15px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #b068bc;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 160px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes .icons-contato i {
+    padding: 10px;
+    font-size: 30px;
+    color: #000;
+    transition: all .3s ease-in;
+
+}
+
+.home .informacoes .icons-contato i:hover {
+    color: #b068bc;
+    transform: translateY(-5px);
+}
+
+.home .informacoes .titulo {
+    font-family: 'Urbanist';
+    font-size: 55px;
+    letter-spacing: 2.5px;
+}
+
+.home .informacoes .texto {
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home .informacoes .btn-portfolio {
+    background-color: #812b91d3;
+    border: 0.5px solid #f0f8ff;
+    border-radius: 20px;
+    font-family: 'Urbanist';
+    font-weight: bolder;
+    letter-spacing: 1.6px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    width: 40%;
+    transition: all .3s ease-in;
+}
+
+.home .informacoes .btn-portfolio:hover {
+    background-color: #f0f8ff;
+    border: 0.5px solid #b068bc;
+    color: #b068bc;
+}
+
+.home .banner {
+    position: absolute;
+    min-height: calc(100vh - 80px);
+    padding: 120px 80px 80px 700px;
+    display: flex;
+    max-width: 780px;
+}
+
+.habilidade, .projeto, .sobre-mim{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.habilidade .titulo, .projeto .titulo, .sobre-mim .titulo, .contatos .titulo{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Urbanist';
+    letter-spacing: 2.5px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.habilidade .cards-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.habilidade .cards-habilidades li{
+    display: flex;
+border-radius: 8px;
+box-shadow: 0px 0px 0px 1px rgba(188,192,196,1);
+padding:1px 30px;
+
+}
+.habilidade .cards-habilidades p{
+    font-family: 'Poppins';
+    margin-top:10px;
+    margin-left: 5px;
+    text-align: right;
+}
+
+.projeto{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto .container{
+    max-width: 1120px;
+    width: 100%;
+}
+
+.projeto .slide-container{
+    margin: 0 30px 30px 30px;
+    overflow: hidden;
+}
+
+.card{
+    background: #fff;
+    border-radius: 8px;
+    min-height: 330px;
+}
+
+.card .image-box{
+    height: 200px;
+}
+
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card .profile-details{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.card .profile-details img{
+    max-height: 50px;
+    max-width:50px;
+}
+
+.profile-details .name{
+    font-family: 'Urbanist';
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.profile-details .job{
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.profile-details .ferramentas{
+    font-family: 'Urbanist';
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #4f4f4f13;
+}
+
+.profile-details .btn-projeto{
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+
+.profile-details .btn-projeto a{
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: #b068bc;
+    transition: all .3s ease-in;
+}
+
+.profile-details .btn-projeto i{
+    margin-right: 3px;
+}
+
+.profile-details .btn-projeto a:hover{
+    background-color: #fff;
+    border: 0.5px solid #b068bc;
+    color: #b068bc;
+}
+
+.projeto .swiper-navBtn{
+    color: #b068bc;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+.swiper-navBtn::before,.swiper-navBtn::after{
+    font-size: 18px;
+}
+
+.projeto .swiper-pagination-bullet{
+    background-color: #812b91d3;
+
+}
+
+
+.sobre-mim{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    flex-wrap: wrap;
+}
+
+.sobre-mim .informacoes{
+    display: flex;
+    width: 100%;
+    
+}
+
+.sobre-mim .foto-de-perfil img{
+    width: 300px;
+}
+
+.sobre-mim .informacoes p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 780px;
+}
+  
+.contato{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap:42px;
+    width: 100%;
+    
+}
+
+.contatos .informacoes .conjunto{
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+
+}
+.contatos .informacoes .conjunto i{
+    
+    display: flex;
+   font-size: 30px;
+   color: #b068bc;
+
+}
+
+.contatos .informacoes .conjunto h3{
+    font-size: 25px;
+    font-family: "Urbanist";
+    color: #000;
+    
+ }
+
+.contatos .conjunto p{
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.rodape{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    color: #000;
+    background-color: #f0f8ff;
+    box-shadow: 0px 4px 10px 1px #000000;
+    margin-top: 10em;
+    width: 100%;
+}
+
+
+.rodape .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap:2em;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape .logo{
+    display: block;
+    font-family: 'Urbanist';
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #b068bc;
+    margin:0;
+    transition: 0.3s all ease;
+}
+.rodape .logo:hover{
+    color: #000;
+    
+}
+
+.rodape .media-icons li{
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.rodape .media-icons a{
+font-size: 1.3em;
+width: 2em;
+height: 2em;
+border: 1px #000 solid;
+color: #000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.3s;
+}
+
+.rodape .media-icons a:hover{
+color: #b068bc;
+border: 1px #b068bc solid;
+}
+
+
+
+
+
+
+
+
