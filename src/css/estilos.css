@@ -3,6 +3,10 @@ body {
     color: #000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .cabecalho {
     position: fixed;
     z-index: 2;
