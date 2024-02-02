@@ -120,10 +120,10 @@
     }
 
     .projeto .slide-container{
-      margin: 0 1px;
+      margin: 0 10px;
   }
   .projeto{
-    padding: 20px;
+    padding: 25px;
   }
   .projeto .swiper-navBtn{
     display: none;
