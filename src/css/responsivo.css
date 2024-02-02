@@ -118,7 +118,20 @@
         padding:1px 10px;
     
     }
-    
+
+    .projeto .slide-container{
+      margin: 0 1px;
+  }
+  .projeto{
+    padding: 20px;
+  }
+  .projeto .swiper-navBtn{
+    display: none;
+}
+  .swiper-navBtn::before,.swiper-navBtn::after{
+    font-size: 18px;
+}
+
     .sobre-mim{
         padding: 0;
     }
