@@ -148,7 +148,7 @@ html{
     flex-wrap: wrap;
     gap: 32px;
     justify-content: center;
-    cursor: pointer;
+   
 }
 
 .habilidade .cards-habilidades li{
